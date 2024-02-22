@@ -16,7 +16,6 @@ date.value = new Date().toISOString().split('T')[0];
 form.addEventListener("submit", (e) => {
     e.preventDefault();
     console.log(uniqueValue);
-    debugger
     isValidateTime(date.value, sTime.value, eTime.value);
 });
 

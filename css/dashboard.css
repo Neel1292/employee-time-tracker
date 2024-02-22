@@ -61,8 +61,7 @@ table, th, td {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top: 50px;
-    gap: 30px;
+    gap: 20px;
 }
 
 /* Set the table border and head color */
@@ -70,7 +69,7 @@ table, th, td {
     border: 2px solid #136363;
     border-collapse: collapse;
     background-color: rgb(190 239 255);
-    margin: auto;
+    /* margin: auto; */
     width: 100%;
 }
 
@@ -103,8 +102,4 @@ a{
     border: 1px solid rgb(9, 159, 224);
     background-color: transparent;
     color: rgb(9, 159, 224);
-}
-
-.no-data {
-    display: none;
 }

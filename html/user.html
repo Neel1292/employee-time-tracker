@@ -27,7 +27,7 @@
     </nav>
  
     <div class="content">
-		<div id="home" class="active">
+		<div id="home"  class="active">
 			<h1>Welcome to our website!</h1>
 			<!-- <p>This is the home page.</p> -->
             <div class="anim">
@@ -35,7 +35,7 @@
             </div>
 		</div>
 
-		<div id="add-time">
+		<div id="add-time" >
             <div class="page-width">
                 <div class="add-time-section">
                     <h1>Add Timing</h1>
@@ -70,13 +70,16 @@
             <div class="page-width">
                 <div class="data-view">
                     <h2>TIme Sheet View</h2>
+                    <div class="search-input">
+                        <input type="date" id="search" placeholder="Search by Date">
+                    </div>
                     <table class="data_table">
                         <thead>
                             <th>Date</th>
                             <th>Check-In Time</th>
                             <th>Check-Out Time</th>
                             <th>Working Hours</th>
-                            <!-- <th>Remove</th>   -->
+                            <th>Remove</th>  
                         </thead>
                         <tbody class="table-body"></tbody>
 
@@ -94,5 +97,6 @@
     <script src="../js/addTime.js" defer></script>
     <script src="../js/dashboard.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+    <script src="https://kit.fontawesome.com/90a9eae7e1.js" crossorigin="anonymous"></script>
 </body>
 </html>

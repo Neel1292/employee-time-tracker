@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <script src="https://kit.fontawesome.com/90a9eae7e1.js" crossorigin="anonymous"></script>
+    <title>Employee Management System</title>
+</head>
+<body>
+    <div class="form">
+        <div class="page-width">
+            <div class="form-container">
+                <h1>Sign Up</h1>
+                <form action="" class="employee-form">
+
+                    <div class="input-control">
+                        <!-- <i class="fa-solid fa-user"></i> -->
+                        <input type="text" name="userName" id="name" placeholder="Your Good Name">
+                        <span class="error"></span>
+                    </div>
+
+                                        
+                    <div class="input-control">
+                        <!-- <i class="fa-solid fa-person"></i> -->
+                        <input type="number" name="userAge" id="age" placeholder="How Old Are You ?">
+                        <span class="error"></span> 
+                    </div>
+
+                    <div class="input-control">
+                        <!-- <i class="fa-solid fa-mobile-screen-button"></i> -->
+                        <input type="number" id="number" name="userMobileNum" placeholder="Mobile Number" maxlength="10" pattern="[6-9]{1}[0-9]{9}" >
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="input-control">
+                        <!-- <i class="fa-regular fa-envelope"></i> -->
+                        <input type="email" id="email" name="userEmail" placeholder="Drop your Mail" >
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="input-control">
+                        <!-- <i class="fa-solid fa-key"></i> -->
+                        <input type="password" id="password" name="userPassword" placeholder="Password"/>
+                        <span class="error"></span>
+                        <i id="eye-icon" class="fa-solid fa-eye"></i>
+                        <ul class="password-match-list">
+                            <li>
+                                <i class="fa-solid fa-xmark"></i>
+                                <span>At least 8 character length</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-xmark"></i>
+                                <span>At least 1 number (0-9)</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-xmark"></i>
+                                <span>At least 1 uppercase letter (A-Z)</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-xmark"></i>
+                                <span>At least 1 lowercase letter (a-z)</span>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-xmark"></i>
+                                <span>At least 1 special symbol (!-&)</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="input-control">
+                        <!-- <i class="fa-solid fa-key"></i> -->
+                        <input type="password" id="cpassword" name="userCPassword" placeholder="Confirm Password"/>
+                        <i id="eye-icon2" class="fa-solid fa-eye"></i>
+                        <span class="error"></span>
+                    </div>
+                    
+
+                    <button class="submit-btn" type="submit">Create Account</button>
+                </form>
+
+                <div class="login-container">
+                    <p>Already have an account ? <a href="./html/login.html">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

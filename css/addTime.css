@@ -1,0 +1,94 @@
+.add-time-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    max-width: 40%;
+    height: 500px;
+    margin: 0 auto;
+    background-color: white;
+    color: #067381;
+    border-radius: 10px;
+    background-image: url('../images/form-background.png');
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-size: 100% auto;
+    background-position: bottom center;
+    background-blend-mode: hard-light;
+}
+
+h1 {
+    text-align: center;
+    color: #136363;
+}
+
+.add-time-section .time-sheet-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    padding: 50px 0;
+}
+
+.time-sheet-form .input-control {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: 'Oswald', sans-serif;
+}
+
+input[type="date"], input[type="time"]{
+    padding: 5px 30px;
+    border: none;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+input {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    color: rgb(5, 68, 75);
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.error {
+    font-size: 12px;
+    color: red;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.time-btn {
+    padding: 20px 0;
+    min-width: 225px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    color: white;
+    background-color: #4FC2F8;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.login-btn:hover {
+    border-color: #4FC2F8;
+    color: #4FC2F8;
+    background-color: transparent;
+}
+
+::placeholder {
+    color: #136363;
+}
+
+i {
+    margin-left: 2px;
+    font-size: 15px;
+}

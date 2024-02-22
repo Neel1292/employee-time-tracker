@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/addTime.css">
+    <script src="../js/login.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/90a9eae7e1.js" crossorigin="anonymous"></script>
+
+    <title>Employee | Login</title>
+</head>
+<body>
+    <div class="login-form">
+        <div class="page-width">
+            <div class="form-section">
+                <h1>Sign In</h1>
+                <form action="" class="employee-login">
+                    
+                    <div class="input-control">
+                        <!-- <i class="fa-regular fa-envelope"></i> -->
+                        <input type="email" id="email" name="userEmail" placeholder="Drop your Mail" >
+                        <span class="error"></span>
+                    </div>
+
+                    <div class="input-control">
+                        <!-- <i class="fa-solid fa-key"></i> -->
+                        <input type="password" id="password" name="userPassword" placeholder="Password"/>
+                        <span class="error"></span>
+                        <i id="eye-icon" class="fa-solid fa-eye"></i>
+                    </div>
+
+                    <button class="login-btn" type="submit">Login</button>
+                </form>
+
+                <div class="login-container">
+                    <p>Create an New Account ? <a href="../index.html">Sign Up</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

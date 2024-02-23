@@ -5,7 +5,7 @@
   const viewForm = document.querySelector(".data-view");
   const tableView = document.querySelector(".table-conatienr");
   const searchInput = document.querySelector("#search");
-  let totalWorkHours = 0;
+  var totalWorkHours = 0;
 
   let userEmail = sessionStorage.getItem("user");
 
@@ -53,7 +53,7 @@
 
   function getDataView() {
     totalWorkHours = 0;
-
+    
     if (timeSheets && timeSheets.length > 0) {
       const timeSheetsSortedByDate = timeSheets.slice().sort((a, b) => {
         const dateA = new Date(`${a.date} ${a.checkIn}`);
@@ -61,6 +61,7 @@
         return dateA.getTime() - dateB.getTime();
       });
 
+      // displayTotalHours.innerText = ''
       timeSheetsSortedByDate.forEach((sheet, index) => {
         if (sheet.email === userEmail) {
           // const hours = Math.floor(sheet.totalWork / (1000 * 60 * 60));
@@ -78,8 +79,8 @@
         }
         // <td>${hours}:${minutes < 10 ? '0' : ''}${minutes}</td>
       });
+      displayTotalHours.innerText = `${msToHms(totalWorkHours)}`;
 
-      displayTotalHours.innerText += `${msToHms(totalWorkHours)}`;
 
     } else {
       tableView.innerHTML = `<h2>No Data Available...</h2><br/>`;
@@ -105,6 +106,7 @@
   
 // });
 function deleteUser(index) {
+  // debugger
   // Display confirmation block
   if (confirm("Are you sure you want to delete this user's data?")) {
     // If user confirms, perform the deletion

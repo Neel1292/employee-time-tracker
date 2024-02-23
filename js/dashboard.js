@@ -3,7 +3,7 @@
   var displayData = document.querySelector(".table-body");
   var displayTotalHours = document.getElementById("workingHours");
   const viewForm = document.querySelector(".data-view");
-  const tableView = document.querySelector(".data_table");
+  const tableView = document.querySelector(".table-conatienr");
   const searchInput = document.querySelector("#search");
   let totalWorkHours = 0;
 
@@ -82,7 +82,7 @@
       displayTotalHours.innerText += `${msToHms(totalWorkHours)}`;
 
     } else {
-      viewForm.innerHTML = `<h2>No Data Available...</h2><br/>`;
+      tableView.innerHTML = `<h2>No Data Available...</h2><br/>`;
       viewForm.classList.remove("data_table");
     }
   }

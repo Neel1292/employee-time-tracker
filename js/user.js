@@ -28,5 +28,10 @@ navLinks.forEach(link => {
 });
 
 $(document).ready(function(){
-	$('.anim').show(1000)
+	$('.anim').show(1000);
+
+	$('.fa-arrows-rotate').click(function (e) { 
+		location.reload();
+		$('#search').val("");
+	});
 })
